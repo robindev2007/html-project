@@ -1,0 +1,118 @@
+/* ===== Container ===== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.manahmenplan-heder{
+  padding: 48px 0;
+  padding-top: 100px;
+max-width: 1400px;
+margin: 0 auto;
+padding: 0 16px;
+}
+.info-section{
+    width: 100%;
+}
+
+.info-section {
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 0 16px
+}
+
+.container-info-section {
+  width: fit-content;
+  padding: 0 16px;
+  
+}
+
+/* ===== General Padding ===== */
+.px { padding: 48px 0; }
+
+/* ===== Header Section ===== */
+.header-title {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #dc2626;
+  margin-bottom: 16px;
+}
+.header-text p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+@media(min-width:768px){
+  .header-title { font-size: 3rem; }
+  .header-text p { font-size: 1.125rem; }
+}
+@media(min-width:1024px){
+  .header-title { font-size: 3.75rem; }
+  .header-text p { font-size: 1.25rem; }
+}
+
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dc2626;
+  margin-bottom: 24px;
+}
+@media(min-width:768px){
+  .section-title { font-size: 2rem; }
+}
+
+/* ===== Document Cards ===== */
+.document-card {
+  display: flex;
+  gap: 16px;
+  background-color: #f5f7ff;
+  border-radius: 12px;
+  padding: 16px;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  margin-bottom: 16px;
+}
+.document-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.doc-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+}
+.doc-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+  margin-bottom: 4px;
+}
+.doc-date {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 2px;
+}
+.doc-size {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* ===== Documents Grid ===== */
+.documents-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media(min-width:768px){
+  .documents-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media(min-width:1024px){
+  .documents-grid { grid-template-columns: repeat(4, 1fr); }
+}
