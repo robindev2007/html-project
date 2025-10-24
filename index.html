@@ -1,147 +1,166 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deine Altstadt Regensburg</title>
-  <link rel="stylesheet" href="/assets/css/global.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deine Altstadt Regensburg</title>
+    <link rel="stylesheet" href="/assets/css/global.css" />
+  </head>
+  <body>
+    <!-- Desktop Navbar -->
+    <nav class="navbar">
+      <div class="container desktop">
+        <a href="/">
+          <img
+            src="/assets/images//logo//logo.png"
+            alt="Deine Altstadt Regensburg"
+            height="56" />
+        </a>
+        <div class="nav-links">
+          <a href="/zukunftsvision.html">Zukunftsvision</a>
+          <a href="/manahmenplan.html">Maßnahmenplan</a>
+          <a href="/umgesetzte-mabnahmen-veranderungen.html"
+            >Umgesetzte Maßnahmen & Veränderungen</a
+          >
+          <a href="/fragen-antworten.html">Fragen & Antworten</a>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Desktop Navbar -->
-  <nav class="navbar">
-    <div class="container desktop">
+    <!-- Mobile Navbar -->
+    <nav class="mobile-navbar">
       <a href="/">
-        <img src="/assets/images//logo//logo.png" alt="Deine Altstadt Regensburg" height="56">
+        <img src="assets/logo/logo.png" alt="Deine Altstadt Regensburg" />
       </a>
-      <div class="nav-links">
-        <a href="/zukunftsvision">Zukunftsvision</a>
-        <a href="/manahmenplan">Maßnahmenplan</a>
-        <a href="/umgesetzte-mabnahmen-veranderungen">Umgesetzte Maßnahmen & Veränderungen</a>
-        <a href="/fragen-antworten">Fragen & Antworten</a>
+      <button class="menu-btn" id="menu-btn">☰</button>
+    </nav>
+
+    <!-- Sheet / Mobile Menu -->
+    <div class="sheet" id="sheet">
+      <div class="sheet-header">
+        <button id="close-btn">✕</button>
+      </div>
+      <div class="sheet-content">
+        <a href="#"><span>→</span>Info</a>
+        <a href="#"><span>→</span>Vision</a>
+        <a href="#"><span>→</span>Projektablauf</a>
+        <a href="#"><span>→</span>FAQ & Glossar</a>
+        <a href="#"><span>→</span>Projektteam</a>
+      </div>
+      <div class="sheet-footer">
+        <div>
+          <p>Archiv</p>
+          <p>Presse & Newsletter</p>
+        </div>
+        <div>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Mobile Navbar -->
-  <nav class="mobile-navbar">
-    <a href="/">
-      <img src="assets/logo/logo.png" alt="Deine Altstadt Regensburg">
-    </a>
-    <button class="menu-btn" id="menu-btn">☰</button>
-  </nav>
+    <!-- main section -->
 
-  <!-- Sheet / Mobile Menu -->
-  <div class="sheet" id="sheet">
-    <div class="sheet-header">
-      <button id="close-btn">✕</button>
-    </div>
-    <div class="sheet-content">
-      <a href="#"><span>→</span>Info</a>
-      <a href="#"><span>→</span>Vision</a>
-      <a href="#"><span>→</span>Projektablauf</a>
-      <a href="#"><span>→</span>FAQ & Glossar</a>
-      <a href="#"><span>→</span>Projektteam</a>
-    </div>
-    <div class="sheet-footer">
-      <div>
-        <p>Archiv</p>
-        <p>Presse & Newsletter</p>
+    <!-- main section -->
+
+    <!-- Footer Upper Section -->
+    <section class="footer-upper">
+      <!-- Background Image -->
+      <div class="bg-container">
+        <img
+          src="assets/images/Footer/section-newsletter.png"
+          alt="Regensburg old town"
+          class="bg-image" />
+        <div class="overlay"></div>
       </div>
-      <div>
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-      </div>
-    </div>
-  </div>
 
-
-
-
-<!-- Footer Upper Section -->
-  <section class="footer-upper">
-    <!-- Background Image -->
-    <div class="bg-container">
-      <img src="assets/images/Footer/section-newsletter.png" alt="Regensburg old town" class="bg-image">
-      <div class="overlay"></div>
-    </div>
-
-    <!-- Content Container -->
-    <div class="content-container">
-      <div class="container">
-        <div class="grid grid-2">
-          
-          <!-- Left Content -->
-          <div class="left-content">
-            <div>
-              <img src="assets/images/textImage/Group40.png" alt="Deine Altstadt Regensburg" class="group-image">
-            </div>
-            <div class="heading-text">
-              <span class="light-text">unsere Altstadt erleben!</span>
-            </div>
-          </div>
-
-          <!-- Right Content -->
-          <div class="right-content">
-            <p class="description-text">
-              Mehr Raum für Menschen und Aufenthaltsqualität in unserem Stadtzentrum.
-            </p>
-            <hr class="divider">
-            
-            <!-- Profile Card -->
-            <div class="profile-card">
-              <div class="profile-img">
-                <img src="assets/images/men/image4.png" alt="Aaron Tonndorf">
+      <!-- Content Container -->
+      <div class="content-container">
+        <div class="container">
+          <div class="grid grid-2">
+            <!-- Left Content -->
+            <div class="left-content">
+              <div>
+                <img
+                  src="assets/images/textImage/Group40.png"
+                  alt="Deine Altstadt Regensburg"
+                  class="group-image" />
               </div>
-              <div class="profile-info">
-                <h3 class="profile-name">Aaron Tonndorf</h3>
-                <p class="profile-role">Projektleitung</p>
-                <p class="profile-desc">Stadtplanungsamt Regensburg, Verkehrsplanung</p>
+              <div class="heading-text">
+                <span class="light-text">unsere Altstadt erleben!</span>
               </div>
             </div>
 
+            <!-- Right Content -->
+            <div class="right-content">
+              <p class="description-text">
+                Mehr Raum für Menschen und Aufenthaltsqualität in unserem
+                Stadtzentrum.
+              </p>
+              <hr class="divider" />
+
+              <!-- Profile Card -->
+              <div class="profile-card">
+                <div class="profile-img">
+                  <img
+                    src="assets/images/men/image4.png"
+                    alt="Aaron Tonndorf" />
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Aaron Tonndorf</h3>
+                  <p class="profile-role">Projektleitung</p>
+                  <p class="profile-desc">
+                    Stadtplanungsamt Regensburg, Verkehrsplanung
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Left - Archive & Newsletter -->
+          <div class="footer-left">
+            <a href="#" class="footer-link group">
+              Archiv Presse & Newsletter
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="external-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-4h-6a2 2 0 0 0-2 2v6" />
+              </svg>
+            </a>
           </div>
 
+          <!-- Center - Legal Links -->
+          <div class="footer-center">
+            <a href="#" class="footer-link">Impressum</a>
+            <span class="separator">|</span>
+            <a href="#" class="footer-link">Datenschutz</a>
+          </div>
+
+          <!-- Right - Logo -->
+          <div class="footer-right">
+            <img
+              src="assets/images/logo//logo.png"
+              alt="Deine Altstadt Regensburg"
+              class="footer-logo" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-
-
-
-   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-grid">
-        
-        <!-- Left - Archive & Newsletter -->
-        <div class="footer-left">
-          <a href="#" class="footer-link group">
-            Archiv Presse & Newsletter
-            <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-4h-6a2 2 0 0 0-2 2v6"/>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Center - Legal Links -->
-        <div class="footer-center">
-          <a href="#" class="footer-link">Impressum</a>
-          <span class="separator">|</span>
-          <a href="#" class="footer-link">Datenschutz</a>
-        </div>
-
-        <!-- Right - Logo -->
-        <div class="footer-right">
-          <img src="assets/images/logo//logo.png" alt="Deine Altstadt Regensburg" class="footer-logo">
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="/assets//scripts/index.js"></script>
-</body>
+    <script src="/assets//scripts/index.js"></script>
+  </body>
 </html>
