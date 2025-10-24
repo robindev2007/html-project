@@ -490,6 +490,9 @@ button {
   .hero-banner.desktop {
     display: block;
   }
+  .block {
+    flex-direction: row;
+  }
   .hero-banner.mobile {
     display: none;
   }
@@ -500,5 +503,5 @@ button {
   padding-left: 40px;
 }
 .container-page {
-  max-width: 1430px;
+  max-width: 1430px;
 }
