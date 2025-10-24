@@ -22,19 +22,19 @@ document.querySelectorAll('.sheet-content a').forEach(link => {
 
 const testimonials = [
   {
-    image: "assets/women1.jpg",
+    image: "/assets/images/women/women1.jpg",
     quote:
       '"Lorem ipsum dolor sit amet consectetur. Vulputate amet urna amet semper sed vitae molestie varius leo."',
     author: "Gertrud Maltz–Schwarzfischer, Oberbürgermeisterin",
   },
   {
-    image: "assets/women2.jpg",
+    image: "/assets/images/women/women2.jpg",
     quote:
       '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."',
     author: "Max Müller, Bürgermeister",
   },
   {
-    image: "assets/women3.png",
+    image: "/assets/images/women/women3.jpg",
     quote:
       '"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."',
     author: "Anna Schmidt, Stadträtin",
@@ -72,3 +72,12 @@ updateTestimonial();
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const emblaNode = document.querySelector(".embla");
+  const embla = EmblaCarousel(emblaNode, );
+
+  // Optional autoplay
+  let autoplay = setInterval(() => embla.scrollNext(), 3000);
+
+  embla.on("pointerDown", () => clearInterval(autoplay));
+});

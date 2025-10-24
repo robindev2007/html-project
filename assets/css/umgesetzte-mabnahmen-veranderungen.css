@@ -1,6 +1,7 @@
 /* ===== Flow Content Main ===== */
 .flow-contnt-main {
   padding: 80px 20px;
+  
 }
 
 /* Project Flow Container */
@@ -146,6 +147,7 @@
 .date {
   padding: 10px;
   border-radius: 6px;
+  
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -154,6 +156,7 @@
 
 .date.red {
   background: #fc1e34;
+  
 }
 .date.green {
   background: #a5d886;

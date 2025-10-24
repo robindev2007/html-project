@@ -898,6 +898,7 @@ button {
   color: #dc2626;
   font-weight: 300;
   margin-bottom: 2rem;
+  padding-top: 60px;
 }
 
 /* ========== MOBILE SLIDER ========== */
@@ -963,6 +964,8 @@ button {
   display: none;
   align-items: flex-start;
   gap: 50px;
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
 
 .image-box {
@@ -1036,5 +1039,89 @@ blockquote {
 
   .desktop-layout {
     display: flex;
+  }
+}
+
+
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7ff;
+}
+
+/* === Section === */
+.carousel-section {
+  background: #f5f7ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.carousel-container h2 {
+  font-size: 1.5rem;
+  color: #dc2626;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* === Embla Carousel === */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  gap: 16px;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 90%;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.embla__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.embla__slide:hover {
+  transform: scale(1.02);
+}
+
+/* Year Tag */
+.year-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 25%;
   }
 }
