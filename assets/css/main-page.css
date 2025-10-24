@@ -32,6 +32,18 @@ body {
   line-height: 1.7;
 }
 
+.intro-bottom h1 {
+  font-size: 2rem;
+  color: var(--red);
+  margin-bottom: 20px;
+}
+
+.intro-bottom p {
+  font-size: 1.1rem;
+  color: var(--black);
+  line-height: 1.7;
+}
+
 /* === Slider === */
 .slider {
   position: relative;
@@ -60,6 +72,7 @@ body {
 .slides img.active {
   display: block;
   opacity: 1;
+  object-fit: cover;
 }
 
 /* Arrows */
@@ -124,6 +137,7 @@ body {
 
 .block {
   display: flex;
+  flex-direction: column;
   flex-direction: row;
   align-items: flex-start;
   gap: 40px;
@@ -307,4 +321,14 @@ body {
 .pdf-item span:last-child {
   opacity: 0.5;
   font-size: 16px;
+}
+
+.flow-contnt {
+  margin: auto;
+  padding: 16px;
+}
+
+.flow-contnt-main {
+  background-color: #f5f7ff;
+  padding: 80px 00px;
 }
