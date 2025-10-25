@@ -10,7 +10,7 @@
   <body>
     <!-- Desktop Navbar -->
     <nav class="navbar">
-      <div class="container desktop">
+      <div class="container-index desktop">
         <a href="/">
           <img
             src="/assets/images//logo//logo.png"
@@ -119,24 +119,59 @@
           </p>
         </div>
 
-        <!-- Slider -->
-        <div class="slider">
-          <div class="slides">
-            <img
-              class="active"
-              src="/assets/images/sliderImage/slide_1.jpg"
-              alt="Slide 3" />
-            <img src="/assets/images/sliderImage/slider_2.png" alt="Slide 3" />
-            <img src="/assets/images/sliderImage/slide_3.jpg" alt="Slide 3" />
-            <img src="/assets/images/sliderImage/slide_4.jpg" alt="Slide 3" />
-          </div>
+   <!-- =================== Desktop Slider =================== -->
+  <div class="slider-container desktop-slider">
+    <div class="slides-wrapper">
+      <div class="slide active">
+        <img src="assets/images/sliderImage/slide_1.jpg" alt="Outdoor event with map display">
+      </div>
+      <div class="slide">
+        <img src="assets/images/sliderImage/slider_2.png" alt="Cathedral and urban scenes">
+      </div>
+      <div class="slide">
+        <img src="assets/images/sliderImage/slide_3.jpg" alt="Cathedral and here">
+      </div>
+      <div class="slide">
+        <img src="assets/images/sliderImage/slide_4.jpg" alt="Cathedral and images">
+      </div>
+    </div>
 
-          <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
+    <!-- Gradient overlay -->
+    <div class="gradient-overlay"></div>
+
+    <!-- Dots navigation -->
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+
+    <!-- Play/Pause button -->
+    <button class="play-pause-btn" id="playPauseBtn">
+      <span id="playPauseIcon">⏸️</span>
+      <span class="play-pause-text">Slider Pause</span>
+    </button>
+  </div>
+
+  <!-- =================== Mobile Carousel =================== -->
+  <div class="mobile-carousel">
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">
+        <img src="assets/images/sliderImage/slide_1.jpg" alt="Regensburg view 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/images/sliderImage/slider_2.png" alt="Regensburg view 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/images/sliderImage/slide_3.jpg" alt="Regensburg view 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/images/sliderImage/slide_4.jpg" alt="Regensburg view 4">
+      </div>
+    </div>
+  </div>
+
 
         <!-- Content -->
         <div class="content">
@@ -225,13 +260,14 @@
   </div>
 
 
-  <div class="timeline-container">
+  <div class="timeline-container-desktop">
     <!-- Vertical Line -->
-    <div class="timeline">
-      <div class="line"></div>
-      <div class="top-dot"></div>
-      <div class="bottom-dot"></div>
-    </div>
+  <div class="timeline">
+  <div class="line"></div>
+  <div class="top-dot-icons"></div>
+  <div class="top-dot"></div>
+  <div class="bottom-dot"></div>
+</div>
 
     <!-- Timeline Sections -->
     <div class="timeline-sections">
@@ -387,10 +423,12 @@
   </div>
 
 
-  <main class="mobile-timeline p-4 mt-10">
-  <div class="timeline-container">
+  <main class="">
+  <div class=" timeline-container-mobile">
     <!-- Timeline spine -->
     <div class="timeline-spine"></div>
+  <div class="top-dot-mobile"></div>
+   
 
     <!-- Timeline events -->
     <div class="events">
@@ -400,6 +438,7 @@
         <div class="event-content">
           <span class="event-date">23.07. - 29.07.2021</span>
           <h3 class="event-title">Analyseworkshops</h3>
+           <button class="bottom-btn-mobile">MEHR ANZEIGEN ↓</button>
         </div>
       </div>
 
@@ -409,6 +448,7 @@
         <div class="event-content">
           <span class="event-date">12.06. - 05.07.2021</span>
           <h3 class="event-title">Erster Online-Dialog</h3>
+           <button class="bottom-btn-mobile">MEHR ANZEIGEN ↓</button>
         </div>
       </div>
 
@@ -418,6 +458,7 @@
         <div class="event-content">
           <span class="event-date">12.08.2021</span>
           <h3 class="event-title">Öffentliche Auftaktveranstaltung</h3>
+           <button class="bottom-btn-mobile">MEHR ANZEIGEN ↓</button>
         </div>
       </div>
     </div>
@@ -630,7 +671,7 @@
         </div>
       </div>
     </footer>
-
+     <script src="/assets/scripts//index.js"></script>
      <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="/assets/scripts/index.js"></script>
  <script src="/assets/scripts/index.js"></script>

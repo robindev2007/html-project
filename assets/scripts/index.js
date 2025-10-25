@@ -81,3 +81,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
   embla.on("pointerDown", () => clearInterval(autoplay));
 });
+
+
+
+
+// ===== Desktop Slider =====
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const playPauseIcon = document.getElementById("playPauseIcon");
+const playPauseText = document.querySelector(".play-pause-text");
+
+let currentSlide = 0;
+let isPlaying = true;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+  currentSlide = index;
+}
+
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    showSlide(parseInt(dot.dataset.index));
+  });
+});
+
+playPauseBtn.addEventListener("click", () => {
+  isPlaying = !isPlaying;
+  playPauseIcon.textContent = isPlaying ? "⏸️" : "▶️";
+  playPauseText.textContent = isPlaying ? "Slider Pause" : "Slider Play";
+});
+
+// Auto slide
+setInterval(() => {
+  if (!isPlaying) return;
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}, 4000);
+
+// ===== Mobile Carousel =====
+// No JS needed, horizontal scroll works with CSS scroll-snap
